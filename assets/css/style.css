@@ -259,10 +259,7 @@ header .nav-wrap .main-menu .main-li:last-child{
 header .nav-wrap .main-menu .main-li:hover .menu-main{
     background: url("../images/clear_29px.png")no-repeat;
 }
-header .nav-wrap .main-menu .main-li:hover .dropdown-content {
-    display: flex;
-}
-header .nav-wrap .menu-main {
+.burger-pc-menu-button {
     background: url("../images/menu 1.png")no-repeat;
     width: 30px;
     height: 30px;
@@ -1312,4 +1309,14 @@ body.burger-menu_active{
     position: relative;
     text-decoration-line: underline;
     color: #1A4AF4;
+}
+.burger-pc-menu .dropdown-content{
+    display: none;
+}
+.burger-pc-menu.burger-menu_active .burger-pc-menu-button {
+    background: url("../images/clear_29px.png")no-repeat;
+    background-size: contain;
+}
+.burger-pc-menu.burger-menu_active .dropdown-content {
+    display: flex;
 }
